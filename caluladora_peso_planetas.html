@@ -8,14 +8,15 @@
         <p>En la tierra la gravedad es de 9.8m/s^2, y eso es lo que determina tu peso</p>
         <p>Sin embargo, en otros planetas hay diferente gravedad, lo que hace que tu peso ahí sea distinto</p>
         <script>
+            var user_input = parseFloat(prompt("Digita tu peso en kg: "))
             var g_tierra = 9.8;
             var g_marte = 3.7;
             var g_jupiter = 24.8;
-            var tupeso= 50;
+            var tupeso= user_input;
             var peso_resultado;
 
-            peso_resultado =parseInt(tupeso*g_marte / g_tierra);
-            document.write(peso_resultado);
+            peso_resultado =parseFloat(tupeso*g_marte / g_tierra);
+            document.write("tu peso en marte es: <strong>"+peso_resultado+" kg</strong> ");
         </script>
     </body>
 </html>
