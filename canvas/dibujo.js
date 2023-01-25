@@ -2,6 +2,10 @@ var d =document.getElementById("dibujito");
 var lienzo = d.getContext("2d")
 console.log(lienzo)
 
+var texto = document.getElementById("txt_lineas")
+var boton = document.getElementById("btn")
+boton.addEventListener("click",dibujo_por_click);
+
 function makeStroke(initx,inity,finalx,finaly,color){
     lienzo.beginPath();
     lienzo.strokeStyle = color;
@@ -58,10 +62,14 @@ makeStroke(299,299,299,0,"#AFA")
         y+=10;
     }
  }
- dibujar_torre(0,0)
- dibujar_torre_traversa(0,0)
- dibujar_torre_inversa(0,0)
- dibujar_torre_reinversa(0,0)
- for(l=0;l<11;l++){
-    document.write(l)
- }
+
+function dibujo_por_click(){
+    alert("hey")
+
+}
+
+//  dibujar_torre(0,0)
+//  dibujar_torre_traversa(0,0)
+//  dibujar_torre_inversa(0,0)
+//  dibujar_torre_reinversa(0,0)
+
