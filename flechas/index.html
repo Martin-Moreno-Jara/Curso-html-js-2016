@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Dibuja con tu teclado</title>
+        <link rel="stylesheet" href="estilos.css"/>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h1>Dibuja lo que quieras con tu teclado</h1>
+            </header>
+            <section id="content">
+                <h2> ¿Como funciona?</h2>
+                <br/>
+                <p> Mueve las flechas para dibujar lineas</p><br/>
+                <p>Largo de la linea &nbsp; <input type="text" id="line_width"/>
+                </p><br/>
+                <p>
+                    Grueso de linea &nbsp; <input type="text" id="line_height"/> &nbsp; Color de la linea &nbsp; <input type="color" id="line_color"/>
+                </p><br/>
+
+                <canvas width="500px" height="500px" id="draw_canvas"></canvas>
+                <p>¿Que tál te parecio? 
+                    <br/>
+                    Calificalo del 1 al 10: 
+                    <input type="text" id="grade" > &nbsp; <input type="button" value="Calificar" id="send_grade">
+                </p><br/>
+            </section>
+            <aside>
+                <p>Hecho con amor :)<br/>
+                    <a href="https://www.youtube.com/watch?v=3yM5uXp-T_0">Video para aprender CSS básico rápido</a><br/>
+                    <a href="https://platzi.com/clases/1050-basico-programacion/5120-detectar-eventos-del-teclado-con-javascript/">Curso de programación básica de Platzi</a>
+                </p>
+            </aside>
+            <div class="clearfix"></div>
+            <footer>
+                <p>Martin Moreno Jara 01/2023</p>
+            </footer>
+        </div>
+        <script src="draw.js"></script>
+    </body>
+</html>

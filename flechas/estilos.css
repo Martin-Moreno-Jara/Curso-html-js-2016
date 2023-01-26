@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: lightgray;
+    font-family: arial;
+
+}
+#container{
+    width: 80%;
+    margin:0px auto;
+    border: 1px solid black;
+}
+#content{
+    float: left;
+    width: 79%;
+    background: lightskyblue;
+    min-height: 640px;
+}
+#draw_canvas{
+    background-color: white;
+    border: 1px solid black;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto; 
+    display: block;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    background: lightcoral;
+    text-align: center;
+    line-height: 100px;
+    border-bottom: 1px solid black;
+}
+aside{
+    float:left;
+    width: 21%;
+    background: orange;
+    min-height: 640px;
+}
+footer{
+    text-align: center;
+}
+.clearfix{
+    clear:both;
+}
+p{
+    margin-left: 10px;
+}
+h2{
+    margin-left: 5px;
+}
