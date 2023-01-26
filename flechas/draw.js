@@ -37,6 +37,7 @@ function drawKeyboard(evento){
     var grueso = parseInt(grueso_linea.value)
     var color = color_linea.value
     console.log(largo)
+    if(largo !=0 && largo !=NaN && grueso !=0 && grueso !=NaN){
     switch(evento.keyCode){
         case keys.LEFT:
             console.log("Left");
@@ -61,8 +62,8 @@ function drawKeyboard(evento){
             drawLine(posX,posY,keys.DOWN,color,largo,grueso);
             posY+=largo
             console.log(posY)
-
             break;
+    }
     }
 }
 
