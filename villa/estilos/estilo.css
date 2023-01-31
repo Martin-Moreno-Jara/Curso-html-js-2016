@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family:Courier;
+    background:#B0CAB4;
+}
+#container{
+    border: 1px solid gray;
+    padding-bottom: 5px;
+    margin: 0px auto;
+    background-color:#CBD2FF;
+}
+header{
+    background: #B12516;
+    color: white;
+    text-align: center;
+    height: 80px;
+    width: 100%;
+    line-height: 80px;
+}
+#canva{
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;  
+    background-color: white;
+}
+p{
+    padding-left: 2px;
+}
