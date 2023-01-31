@@ -53,6 +53,15 @@ function loadBackground()
 }
 function loadCow()
 {
+    cow.posX= [];
+    cow.posY = [];
+    for(var i=0;i<numCows;i++){
+        var ramnumX = generateRandomNumber(7,0)*60
+        var ramnumY = generateRandomNumber(7,0)*60
+        cow.posX[i] = ramnumX;
+        cow.posY[i] = ramnumY;
+    }
+    console.log(cow.posX)
     cow.ready = true;
     draw();
 }
@@ -85,6 +94,14 @@ function moveSow(event)
 }
 function loadChick()
 {
+    chick.posX = [];
+    chick.posY = [];
+    for(var i =0;i<numChicks;i++){
+        var rannumX = generateRandomNumber(7,0)*60;
+        var rannumY = generateRandomNumber(7,0)*60;
+        chick.posX[i] = rannumX
+        chick.posY[i] = rannumY
+    }
     chick.ready = true;
     draw();
 }
@@ -101,10 +118,8 @@ function draw()
         papel.drawImage(tile.object,0,0)
     }
     if(cow.ready){
-        for(var i=1;i<numCows;i++){
-            var ramnumX = generateRandomNumber(7,0)
-            var ramnumY = generateRandomNumber(7,0)
-            papel.drawImage(cow.object,ramnumX*60,ramnumY*60)
+        for(var i=0;i<numCows;i++){
+            papel.drawImage(cow.object,cow.posX[i],cow.posY[i])
         }
     }
     if(sow.ready && sowT!=true){
@@ -112,9 +127,7 @@ function draw()
     }
     if(chick.ready){
         for(var i=1;i<numChicks;i++){
-            var ramnumX = generateRandomNumber(7,0)
-            var ramnumY = generateRandomNumber(7,0)
-            papel.drawImage(chick.object,ramnumX*60,ramnumY*60)
+            papel.drawImage(chick.object,chick.posX[i],chick.posY[i])
         }
     }
 }
