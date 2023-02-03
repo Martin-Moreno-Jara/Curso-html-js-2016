@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Cash register</title>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <h1>Signo pesos</h1>
+    <div id="mainContainer">
+        <header>
+            <h1>Signo pesos</h1>    
+        </header>
+        <div id="contentContainer">
+            <p>
+                <img src="imgs/cajero.gif"/>
+            </p>
+            <p>
+                <input type="number" id="dinero"/>
+                <input type="button" value="Extraer" id="extraer"/>
+                <p id="damoney"></p>
+            </p>
+        </div>
+        <p id="result"></p>
+        <p id="bills"></p>
+    </div>
+
     <script src="billete.js"></script>
     <script src="cash.js"></script>
 </body>
